@@ -1,3 +1,5 @@
+![License: Proprietary](https://img.shields.io/badge/License-Proprietary-yellow.svg)
+
 run this commands in the terminal
 # for stripe
 composer require stripe/stripe-php
