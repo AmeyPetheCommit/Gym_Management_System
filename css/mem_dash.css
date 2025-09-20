@@ -1,0 +1,139 @@
+ body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #f5f5f5;
+}
+
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #141424;
+    border-bottom: 3px solid #F7C600;
+}
+.logo { font-family: 'Montserrat', sans-serif; font-size: 2rem; }
+.logo .lift { color: #fff; }
+.logo .kings { color: #F7C600; }
+nav a { margin: 0 15px; text-decoration: none; color: #f5f5f5; font-weight: 500; }
+nav a:hover { color: #F7C600; }
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2.section-title {
+    margin: 40px 0 15px;
+    color: #F7C600;
+    font-size: 1.6rem;
+    border-bottom: 2px solid #F7C600;
+    padding-bottom: 5px;
+}
+
+/* Panels */
+.panel {
+    background-color: #2c2c3f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.7);
+}
+
+/* Progress Bar */
+.progress-bar {
+    background: #444;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 22px;
+    margin-top: 10px;
+}
+.progress {
+    height: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    margin: 6px 0;
+    color: #ddd;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 15px;
+    background: #F7C600;
+    color: #000;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #e0b400;
+}
+
+/* Icons & small text */
+.section-title i {
+    margin-right: 8px;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #aaa;
+}
+.receipt-card {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+.receipt-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.btn-download {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background: #F7C600;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+.btn-download:hover {
+  background: #e0b400;
+}
+
+
+@media(max-width:768px){
+    .panel { padding: 15px; }
+    .site-header { flex-direction: column; padding: 15px 20px; }
+    nav { margin-top: 10px; }
+}
